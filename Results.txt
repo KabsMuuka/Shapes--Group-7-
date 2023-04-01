@@ -1,6 +1,4 @@
-# Shapes--Group-7- THE JAVAPARSER OUT:
-
-The java Token numbers and the identifers, keywords,ETC are as follows: 
+The java Token numbers and the identities, keywords are as follows: 
 
 Class name: Main
 No class AST found for Main
