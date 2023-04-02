@@ -1736,4 +1736,3 @@ BinaryExpr: "Circle with radius " + radius
 StringLiteralExpr: "Circle with radius "
 NameExpr: radius
 SimpleName: radius
-Process finished with exit code 0
