@@ -1,5 +1,5 @@
-Java Token numbers and the identifers, keywords etc are as
-follows:
+                Java Token numbers and the identifers, keywords etc are as
+                follows:
 
 Class name: Main
 Class name: Hexagon
@@ -62,8 +62,11 @@ LPAREN: 97
 NEW: 8
 PRIVATE: 1
 VOID: 12
-The java Abstract Syntax Tree is as follows:
-ParserMainAST
+
+                The java Abstract Syntax Tree is as follows:
+                ParserMainAST
+
+
 Class name: Main
 Class AST:
 ClassOrInterfaceDeclaration: public class Main {
