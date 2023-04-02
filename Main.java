@@ -5,15 +5,11 @@ public class Main {
 
      //Sepecifically for the Hexagon shape
 
-      Hexagon hexagon = new Hexagon();
-      hexagon.Area_of_the_hexagon();
-      hexagon.hexagon_like_shape();
 
       //Sepecifically for the Hexagon shape
       
 
       new Shape().welcome();
-        new Shape().welcome();
         //Instances of the specific shapes
 //    Shapes circle = new Circle("Circle","Triangle","Rectangle");
 //    Shapes triangle = new Triangle("Circle","Triangle","Rectangle");

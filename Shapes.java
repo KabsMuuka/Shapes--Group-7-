@@ -8,7 +8,7 @@ public class Shapes {
     int area;
 
     //calculate the area of a shape
-    int calculateArea(){
+    double calculateArea(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Length: ");
         int length = input.nextInt();

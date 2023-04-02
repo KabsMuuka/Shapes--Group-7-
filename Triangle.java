@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Triangle extends Shapes{
     @Override
-    int calculateArea() {
+    double calculateArea() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter base: ");
         int length = input.nextInt();

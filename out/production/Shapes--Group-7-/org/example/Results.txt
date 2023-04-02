@@ -1,0 +1,98 @@
+Java Token numbers and the identifers, keywords etc are as follows: 
+
+Class name: Main
+No class AST found for Main
+Total number of tokens: 270
+CLASS: 1
+ASSIGN: 1
+RBRACKET: 1
+RPAREN: 8
+SPACE: 78
+LBRACKET: 1
+NEW: 3
+VOID: 1
+LBRACE: 2
+SEMICOLON: 5
+DOT: 4
+STATIC: 1
+RBRACE: 2
+IDENTIFIER: 15
+PUBLIC: 2
+SINGLE_LINE_COMMENT: 60
+LPAREN: 8
+EOF: 1
+UNIX_EOL: 76
+
+
+
+
+The java Abstract Syntax Tree is as follows: 
+
+
+Class name: Main
+Class AST:
+ClassOrInterfaceDeclaration: public class Main {
+
+    public static void main(String[] args) {
+        //Sepecifically for the Hexagon shape
+        Hexagon hexagon = new Hexagon();
+        hexagon.Area_of_the_hexagon();
+        hexagon.hexagon_like_shape();
+        //Sepecifically for the Hexagon shape
+        new Shape().welcome();
+    }
+}
+  Modifier: public 
+  SimpleName: Main
+  MethodDeclaration: public static void main(String[] args) {
+    //Sepecifically for the Hexagon shape
+    Hexagon hexagon = new Hexagon();
+    hexagon.Area_of_the_hexagon();
+    hexagon.hexagon_like_shape();
+    //Sepecifically for the Hexagon shape
+    new Shape().welcome();
+}
+    Modifier: public 
+    Modifier: static 
+    SimpleName: main
+    Parameter: String[] args
+      ArrayType: String[]
+        ClassOrInterfaceType: String
+          SimpleName: String
+      SimpleName: args
+    VoidType: void
+    BlockStmt: {
+    //Sepecifically for the Hexagon shape
+    Hexagon hexagon = new Hexagon();
+    hexagon.Area_of_the_hexagon();
+    hexagon.hexagon_like_shape();
+    //Sepecifically for the Hexagon shape
+    new Shape().welcome();
+}
+      ExpressionStmt: //Sepecifically for the Hexagon shape
+Hexagon hexagon = new Hexagon();
+        VariableDeclarationExpr: Hexagon hexagon = new Hexagon()
+          VariableDeclarator: hexagon = new Hexagon()
+            ClassOrInterfaceType: Hexagon
+              SimpleName: Hexagon
+            SimpleName: hexagon
+            ObjectCreationExpr: new Hexagon()
+              ClassOrInterfaceType: Hexagon
+                SimpleName: Hexagon
+      ExpressionStmt: hexagon.Area_of_the_hexagon();
+        MethodCallExpr: hexagon.Area_of_the_hexagon()
+          NameExpr: hexagon
+            SimpleName: hexagon
+          SimpleName: Area_of_the_hexagon
+      ExpressionStmt: hexagon.hexagon_like_shape();
+        MethodCallExpr: hexagon.hexagon_like_shape()
+          NameExpr: hexagon
+            SimpleName: hexagon
+          SimpleName: hexagon_like_shape
+      ExpressionStmt: //Sepecifically for the Hexagon shape
+new Shape().welcome();
+        MethodCallExpr: new Shape().welcome()
+          ObjectCreationExpr: new Shape()
+            ClassOrInterfaceType: Shape
+              SimpleName: Shape
+          SimpleName: welcome

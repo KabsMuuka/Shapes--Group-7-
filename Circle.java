@@ -1,8 +1,14 @@
-import java.lang.Math;
+package org.example;
 
-public class Circle {
+import java.lang.Math;
+import java.util.Scanner;
+
+public class Circle extends Shapes{
     private double radius; // the radius of the circle
-    
+
+    public Circle() {
+    }
+
     // constructor that takes in a radius value
     public Circle(double radius) {
         this.radius = radius;
@@ -20,9 +26,18 @@ public class Circle {
     
     // method that calculates the area of the circle
     public double calculateArea() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter radius: ");
+        setRadius(input.nextDouble());
         return Math.PI * Math.pow(radius, 2);
     }
-    
+
+    @Override
+    void print() {
+        System.out.printf("Area is %f \n",calculateArea());
+        System.out.println(toString());
+    }
+
     // method that calculates the circumference of the circle
     public double calculateCircumference() {
         return 2 * Math.PI * radius;
