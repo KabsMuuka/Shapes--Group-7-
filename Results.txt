@@ -1,98 +1,1738 @@
-Java Token numbers and the identifers, keywords etc are as follows: 
-
+Java Token numbers and the identifers, keywords etc are as
+follows:
 Class name: Main
-No class AST found for Main
-Total number of tokens: 270
-CLASS: 1
-ASSIGN: 1
-RBRACKET: 1
-RPAREN: 8
-SPACE: 78
-LBRACKET: 1
-NEW: 3
-VOID: 1
-LBRACE: 2
-SEMICOLON: 5
-DOT: 4
+Class name: Hexagon
+Class name: Shape
+Class name: Shapes
+Class name: Triangle
+Class name: Rectangle
+Class name: Circle
+Total number of tokens: 3151
+WHILE: 1
+SLASH: 1
+CATCH: 1
+RPAREN: 97
+DOUBLE: 7
+FALSE: 1
+TRUE: 1
+DOT: 89
+LBRACKET: 4
+ASSIGN: 32
+BOOLEAN: 1
+AT: 6
+THIS: 2
+CLASS: 7
+IMPORT: 2
+LE: 4
+MINUS: 3
+IF: 2
+IDENTIFIER: 290
+RBRACKET: 4
+THROW: 1
+_DEFAULT: 1
+RBRACE: 47
+SPACE: 1854
+SEMICOLON: 94
+FLOATING_POINT_LITERAL: 1
+PUBLIC: 8
+SWITCH: 1
+COLON: 7
+INTEGER_LITERAL: 24
+STAR: 9
+LT: 4
+EXTENDS: 2
 STATIC: 1
-RBRACE: 2
-IDENTIFIER: 15
-PUBLIC: 2
-SINGLE_LINE_COMMENT: 60
-LPAREN: 8
+CASE: 3
+UNIX_EOL: 244
+INCR: 9
+RETURN: 6
+SINGLE_LINE_COMMENT: 29
+DECR: 2
+FINAL: 1
+PLUS: 5
+TRY: 1
 EOF: 1
-UNIX_EOL: 76
-
-
-
-
-The java Abstract Syntax Tree is as follows: 
-
-
+COMMA: 8
+LBRACE: 47
+INT: 20
+ELSE: 2
+FOR: 10STRING_LITERAL: 36
+LPAREN: 97
+NEW: 8
+PRIVATE: 1
+VOID: 12
+The java Abstract Syntax Tree is as follows:
+ParserMainAST
 Class name: Main
 Class AST:
 ClassOrInterfaceDeclaration: public class Main {
-
-    public static void main(String[] args) {
-        //Sepecifically for the Hexagon shape
-        Hexagon hexagon = new Hexagon();
-        hexagon.Area_of_the_hexagon();
-        hexagon.hexagon_like_shape();
-        //Sepecifically for the Hexagon shape
-        new Shape().welcome();
-    }
 }
-  Modifier: public 
-  SimpleName: Main
-  MethodDeclaration: public static void main(String[] args) {
-    //Sepecifically for the Hexagon shape
-    Hexagon hexagon = new Hexagon();
-    hexagon.Area_of_the_hexagon();
-    hexagon.hexagon_like_shape();
-    //Sepecifically for the Hexagon shape
-    new Shape().welcome();
 }
-    Modifier: public 
-    Modifier: static 
-    SimpleName: main
-    Parameter: String[] args
-      ArrayType: String[]
-        ClassOrInterfaceType: String
-          SimpleName: String
-      SimpleName: args
-    VoidType: void
-    BlockStmt: {
-    //Sepecifically for the Hexagon shape
-    Hexagon hexagon = new Hexagon();
-    hexagon.Area_of_the_hexagon();
-    hexagon.hexagon_like_shape();
-    //Sepecifically for the Hexagon shape
-    new Shape().welcome();
 }
-      ExpressionStmt: //Sepecifically for the Hexagon shape
+public static void main(String[] args) {
+//Sepecifically for the Hexagon shape
 Hexagon hexagon = new Hexagon();
-        VariableDeclarationExpr: Hexagon hexagon = new Hexagon()
-          VariableDeclarator: hexagon = new Hexagon()
-            ClassOrInterfaceType: Hexagon
-              SimpleName: Hexagon
-            SimpleName: hexagon
-            ObjectCreationExpr: new Hexagon()
-              ClassOrInterfaceType: Hexagon
-                SimpleName: Hexagon
-      ExpressionStmt: hexagon.Area_of_the_hexagon();
-        MethodCallExpr: hexagon.Area_of_the_hexagon()
-          NameExpr: hexagon
-            SimpleName: hexagon
-          SimpleName: Area_of_the_hexagon
-      ExpressionStmt: hexagon.hexagon_like_shape();
-        MethodCallExpr: hexagon.hexagon_like_shape()
-          NameExpr: hexagon
-            SimpleName: hexagon
-          SimpleName: hexagon_like_shape
-      ExpressionStmt: //Sepecifically for the Hexagon shape
+hexagon.Area_of_the_hexagon();
+hexagon.hexagon_like_shape();
+//Sepecifically for the Hexagon shape
 new Shape().welcome();
-        MethodCallExpr: new Shape().welcome()
-          ObjectCreationExpr: new Shape()
-            ClassOrInterfaceType: Shape
-              SimpleName: Shape
-          SimpleName: welcome
+}
+Modifier: public
+SimpleName: Main
+MethodDeclaration: public static void main(String[] args) {
+//Sepecifically for the Hexagon shape
+Hexagon hexagon = new Hexagon();
+hexagon.Area_of_the_hexagon();
+hexagon.hexagon_like_shape();
+//Sepecifically for the Hexagon shape
+new Shape().welcome();
+Modifier: public
+Modifier: static
+SimpleName: main
+Parameter: String[] args
+ArrayType: String[]
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: args
+VoidType: void
+BlockStmt: {
+//Sepecifically for the Hexagon shape
+Hexagon hexagon = new Hexagon();
+hexagon.Area_of_the_hexagon();
+hexagon.hexagon_like_shape();
+//Sepecifically for the Hexagon shape
+new Shape().welcome();
+ExpressionStmt: //Sepecifically for the Hexagon shape
+Hexagon hexagon = new Hexagon();
+VariableDeclarationExpr: Hexagon hexagon = new Hexagon()
+VariableDeclarator: hexagon = new Hexagon()
+ClassOrInterfaceType: Hexagon
+SimpleName: HexagonSimpleName: hexagon
+ObjectCreationExpr: new Hexagon()
+ClassOrInterfaceType: Hexagon
+SimpleName: Hexagon
+ExpressionStmt: hexagon.Area_of_the_hexagon();
+MethodCallExpr: hexagon.Area_of_the_hexagon()
+NameExpr: hexagon
+SimpleName: hexagon
+SimpleName: Area_of_the_hexagon
+ExpressionStmt: hexagon.hexagon_like_shape();
+MethodCallExpr: hexagon.hexagon_like_shape()
+NameExpr: hexagon
+SimpleName: hexagon
+SimpleName: hexagon_like_shape
+ExpressionStmt: //Sepecifically for the Hexagon shape
+new Shape().welcome();
+MethodCallExpr: new Shape().welcome()
+ObjectCreationExpr: new Shape()
+ClassOrInterfaceType: Shape
+SimpleName: Shape
+SimpleName: welcome
+LineComment: //Sepecifically for the Hexagon shape
+LineComment: //Sepecifically for the Hexagon shape
+Class name: Hexagon
+Class AST:
+ClassOrInterfaceDeclaration: //Hexagon
+class Hexagon {
+final int sides = 6;
+//Method calculating area of an hexagon
+void Area_of_the_hexagon() {
+System.out.println("\t\tAn Hexagon has six sides");
+System.out.println("\t\tCalculating the are of an Hexagon");
+double area = (3 * Math.sqrt(3) * sides) / 2;
+System.out.println("\t\tThe calculated area is " + Math.floor(area));
+}
+line
+//printing hexagon like shape
+void hexagon_like_shape() {
+// the size of the hexagon
+int size = 5;
+// the number of spaces needed at the beginning of each line
+int spaces = size - 1;
+// the number of stars needed on each line
+int stars = size;
+// loop through each row of the hexagon
+for (int i = 0; i < size * 2 - 1; i++) {
+// print out the necessary number of spaces at the beginning of the
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+// print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {
+System.out.print("* ");
+}}
+}
+}
+// move to the next line and adjust the number of spaces and stars
+System.out.println();
+if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;
+}
+SimpleName: Hexagon
+FieldDeclaration: final int sides = 6;
+Modifier: final
+VariableDeclarator: sides = 6
+PrimitiveType: int
+SimpleName: sides
+IntegerLiteralExpr: 6
+MethodDeclaration: //Method calculating area of an hexagon
+void Area_of_the_hexagon() {
+System.out.println("\t\tAn Hexagon has six sides");
+System.out.println("\t\tCalculating the are of an Hexagon");
+double area = (3 * Math.sqrt(3) * sides) / 2;
+System.out.println("\t\tThe calculated area is " + Math.floor(area));
+}
+SimpleName: Area_of_the_hexagon
+VoidType: void
+BlockStmt: {
+System.out.println("\t\tAn Hexagon has six sides");
+System.out.println("\t\tCalculating the are of an Hexagon");
+double area = (3 * Math.sqrt(3) * sides) / 2;
+System.out.println("\t\tThe calculated area is " + Math.floor(area));
+}
+ExpressionStmt: System.out.println("\t\tAn Hexagon has six sides");
+MethodCallExpr: System.out.println("\t\tAn Hexagon has six sides")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "\t\tAn Hexagon has six sides"
+ExpressionStmt: System.out.println("\t\tCalculating the are of an
+Hexagon");
+MethodCallExpr: System.out.println("\t\tCalculating the are of an
+Hexagon")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "\t\tCalculating the are of an Hexagon"
+ExpressionStmt: double area = (3 * Math.sqrt(3) * sides) / 2;
+VariableDeclarationExpr: double area = (3 * Math.sqrt(3) * sides) / 2
+VariableDeclarator: area = (3 * Math.sqrt(3) * sides) / 2
+PrimitiveType: double
+SimpleName: area
+BinaryExpr: (3 * Math.sqrt(3) * sides) / 2
+EnclosedExpr: (3 * Math.sqrt(3) * sides)
+BinaryExpr: 3 * Math.sqrt(3) * sidesBinaryExpr: 3 * Math.sqrt(3)
+IntegerLiteralExpr: 3
+MethodCallExpr: Math.sqrt(3)
+NameExpr: Math
+SimpleName: Math
+SimpleName: sqrt
+IntegerLiteralExpr: 3
+NameExpr: sides
+SimpleName: sides
+IntegerLiteralExpr: 2
+ExpressionStmt: System.out.println("\t\tThe calculated area is " +
+Math.floor(area));
+MethodCallExpr: System.out.println("\t\tThe calculated area is " +
+Math.floor(area))
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+BinaryExpr: "\t\tThe calculated area is " + Math.floor(area)
+StringLiteralExpr: "\t\tThe calculated area is "
+MethodCallExpr: Math.floor(area)
+NameExpr: Math
+SimpleName: Math
+SimpleName: floor
+NameExpr: area
+SimpleName: area
+MethodDeclaration: //printing hexagon like shape
+void hexagon_like_shape() {
+// the size of the hexagon
+int size = 5;
+// the number of spaces needed at the beginning of each line
+int spaces = size - 1;
+// the number of stars needed on each line
+int stars = size;
+// loop through each row of the hexagon
+for (int i = 0; i < size * 2 - 1; i++) {
+// print out the necessary number of spaces at the beginning of the line
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+// print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {
+System.out.print("* ");
+}
+// move to the next line and adjust the number of spaces and stars
+System.out.println();
+if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;
+}
+}
+}
+SimpleName: hexagon_like_shape
+VoidType: void
+BlockStmt: {
+// the size of the hexagon}
+int size = 5;
+// the number of spaces needed at the beginning of each line
+int spaces = size - 1;
+// the number of stars needed on each line
+int stars = size;
+// loop through each row of the hexagon
+for (int i = 0; i < size * 2 - 1; i++) {
+// print out the necessary number of spaces at the beginning of the line
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+// print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {
+System.out.print("* ");
+}
+// move to the next line and adjust the number of spaces and stars
+System.out.println();
+if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;
+}
+}
+ExpressionStmt: // the size of the hexagon
+int size = 5;
+VariableDeclarationExpr: int size = 5
+VariableDeclarator: size = 5
+PrimitiveType: int
+SimpleName: size
+IntegerLiteralExpr: 5
+ExpressionStmt: // the number of spaces needed at the beginning of each
+line
+int spaces = size - 1;
+VariableDeclarationExpr: int spaces = size - 1
+VariableDeclarator: spaces = size - 1
+PrimitiveType: int
+SimpleName: spaces
+BinaryExpr: size - 1
+NameExpr: size
+SimpleName: size
+IntegerLiteralExpr: 1
+ExpressionStmt: // the number of stars needed on each line
+int stars = size;
+VariableDeclarationExpr: int stars = size
+VariableDeclarator: stars = size
+PrimitiveType: int
+SimpleName: stars
+NameExpr: size
+SimpleName: size
+ForStmt: // loop through each row of the hexagon
+for (int i = 0; i < size * 2 - 1; i++) {
+// print out the necessary number of spaces at the beginning of the line
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+// print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {}
+}
+System.out.print("* ");
+}
+// move to the next line and adjust the number of spaces and stars
+System.out.println();
+if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;
+}
+VariableDeclarationExpr: int i = 0
+VariableDeclarator: i = 0
+PrimitiveType: int
+SimpleName: i
+IntegerLiteralExpr: 0
+BinaryExpr: i < size * 2 - 1
+NameExpr: i
+SimpleName: i
+BinaryExpr: size * 2 - 1
+BinaryExpr: size * 2
+NameExpr: size
+SimpleName: size
+IntegerLiteralExpr: 2
+IntegerLiteralExpr: 1
+UnaryExpr: i++
+NameExpr: i
+SimpleName: i
+BlockStmt: {
+// print out the necessary number of spaces at the beginning of the line
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+// print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {
+System.out.print("* ");
+}
+// move to the next line and adjust the number of spaces and stars
+System.out.println();
+if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;
+}
+ForStmt: // print out the necessary number of spaces at the beginning
+of the line
+for (int j = 0; j < spaces; j++) {
+System.out.print(" ");
+}
+VariableDeclarationExpr: int j = 0
+VariableDeclarator: j = 0
+PrimitiveType: int
+SimpleName: j
+IntegerLiteralExpr: 0
+BinaryExpr: j < spaces
+NameExpr: j}
+SimpleName: j
+NameExpr: spaces
+SimpleName: spaces
+UnaryExpr: j++
+NameExpr: j
+SimpleName: j
+BlockStmt: {
+System.out.print(" ");
+ExpressionStmt: System.out.print(" ");
+MethodCallExpr: System.out.print(" ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: print
+StringLiteralExpr: " "
+ForStmt: // print out the necessary number of stars for the line
+for (int j = 0; j < stars; j++) {
+System.out.print("* ");
+}
+VariableDeclarationExpr: int j = 0
+VariableDeclarator: j = 0
+PrimitiveType: int
+SimpleName: j
+IntegerLiteralExpr: 0
+BinaryExpr: j < stars
+NameExpr: j
+SimpleName: j
+NameExpr: stars
+SimpleName: stars
+UnaryExpr: j++
+NameExpr: j
+SimpleName: j
+BlockStmt: {
+System.out.print("* ");
+}
+ExpressionStmt: System.out.print("* ");
+MethodCallExpr: System.out.print("* ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: print
+StringLiteralExpr: "* "
+ExpressionStmt: // move to the next line and adjust the number of
+spaces and stars
+System.out.println();
+MethodCallExpr: System.out.println()
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+IfStmt: if (i < size - 1) {
+spaces--;
+stars++;
+} else {
+spaces++;
+stars--;}
+}
+}
+BinaryExpr: i < size - 1
+NameExpr: i
+SimpleName: i
+BinaryExpr: size - 1
+NameExpr: size
+SimpleName: size
+IntegerLiteralExpr: 1
+BlockStmt: {
+spaces--;
+stars++;
+ExpressionStmt: spaces--;
+UnaryExpr: spaces--
+NameExpr: spaces
+SimpleName: spaces
+ExpressionStmt: stars++;
+UnaryExpr: stars++
+NameExpr: stars
+SimpleName: stars
+BlockStmt: {
+spaces++;
+stars--;
+ExpressionStmt: spaces++;
+UnaryExpr: spaces++
+NameExpr: spaces
+SimpleName: spaces
+ExpressionStmt: stars--;
+UnaryExpr: stars--
+NameExpr: stars
+SimpleName: stars
+Class name: Shape
+Class AST:
+ClassOrInterfaceDeclaration: //Shape
+class Shape {
+Shapes triangle = new Triangle();
+Shapes rectangle = new Rectangle();
+Scanner input = new Scanner(System.in);
+void welcome() {
+System.out.println("Welcome to Shapes project!\n");
+System.out.println("********************************");
+System.out.println("Please choose a shape\n 1. Triangle \n 2. Circle \n
+3. Rectangle");
+boolean num = true;
+try {
+while (num) {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+}
+}
+}
+} catch (Exception e) {
+System.out.println("Not a number");
+}
+SimpleName: Shape
+FieldDeclaration: Shapes triangle = new Triangle();
+VariableDeclarator: triangle = new Triangle()
+ClassOrInterfaceType: Shapes
+SimpleName: Shapes
+SimpleName: triangle
+ObjectCreationExpr: new Triangle()
+ClassOrInterfaceType: Triangle
+SimpleName: Triangle
+FieldDeclaration: Shapes rectangle = new Rectangle();
+VariableDeclarator: rectangle = new Rectangle()
+ClassOrInterfaceType: Shapes
+SimpleName: Shapes
+SimpleName: rectangle
+ObjectCreationExpr: new Rectangle()
+ClassOrInterfaceType: Rectangle
+SimpleName: Rectangle
+FieldDeclaration: Scanner input = new Scanner(System.in);
+VariableDeclarator: input = new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+SimpleName: input
+ObjectCreationExpr: new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+FieldAccessExpr: System.in
+NameExpr: System
+SimpleName: System
+SimpleName: in
+MethodDeclaration: void welcome() {
+System.out.println("Welcome to Shapes project!\n");
+System.out.println("********************************");
+System.out.println("Please choose a shape\n 1. Triangle \n 2. Circle \n 3.
+Rectangle");
+boolean num = true;
+try {
+while (num) {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+}
+}
+} catch (Exception e) {
+System.out.println("Not a number");
+}
+SimpleName: welcome
+VoidType: void
+BlockStmt: {
+System.out.println("Welcome to Shapes project!\n");
+System.out.println("********************************");
+System.out.println("Please choose a shape\n 1. Triangle \n 2. Circle \n 3.
+Rectangle");
+boolean num = true;
+try {
+while (num) {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+}
+} catch (Exception e) {
+System.out.println("Not a number");
+}
+}
+ExpressionStmt: System.out.println("Welcome to Shapes project!\n");
+MethodCallExpr: System.out.println("Welcome to Shapes project!\n")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Welcome to Shapes project!\n"
+ExpressionStmt: System.out.println("********************************");
+MethodCallExpr: System.out.println("********************************")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "********************************"ExpressionStmt: System.out.println("Please choose a shape\n 1. Triangle \n
+2. Circle \n 3. Rectangle");
+MethodCallExpr: System.out.println("Please choose a shape\n 1.
+Triangle \n 2. Circle \n 3. Rectangle")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Please choose a shape\n 1. Triangle \n 2. Circle \
+n 3. Rectangle"
+ExpressionStmt: boolean num = true;
+VariableDeclarationExpr: boolean num = true
+VariableDeclarator: num = true
+PrimitiveType: boolean
+SimpleName: num
+BooleanLiteralExpr: true
+TryStmt: try {
+while (num) {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+}
+} catch (Exception e) {
+System.out.println("Not a number");
+}
+BlockStmt: {
+while (num) {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+}
+}
+WhileStmt: while (num) {}
+}
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+NameExpr: num
+SimpleName: num
+BlockStmt: {
+if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+IfStmt: if (input.hasNextInt()) {
+int choice = input.nextInt();
+switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+num = false;
+} else {
+throw new Exception();
+}
+MethodCallExpr: input.hasNextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: hasNextInt
+BlockStmt: {
+int choice = input.nextInt();
+switch(choice) {case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+}
+}
+}
+num = false;
+ExpressionStmt: int choice = input.nextInt();
+VariableDeclarationExpr: int choice = input.nextInt()
+VariableDeclarator: choice = input.nextInt()
+PrimitiveType: int
+SimpleName: choice
+MethodCallExpr: input.nextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: nextInt
+SwitchStmt: switch(choice) {
+case 1:
+triangle.print();
+case 2:
+System.out.println("Circle");
+case 3:
+rectangle.print();
+default:
+System.out.println("Invalid choice!!");
+NameExpr: choice
+SimpleName: choice
+SwitchEntry: case 1:
+triangle.print();
+IntegerLiteralExpr: 1
+ExpressionStmt: triangle.print();
+MethodCallExpr: triangle.print()
+NameExpr: triangle
+SimpleName: triangle
+SimpleName: print
+SwitchEntry: case 2:
+System.out.println("Circle");
+IntegerLiteralExpr: 2
+ExpressionStmt: System.out.println("Circle");
+MethodCallExpr: System.out.println("Circle")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Circle"
+SwitchEntry: case 3:
+rectangle.print();
+IntegerLiteralExpr: 3
+ExpressionStmt: rectangle.print();
+MethodCallExpr: rectangle.print()
+NameExpr: rectangleSimpleName: rectangle
+SimpleName: print
+SwitchEntry: default:
+System.out.println("Invalid choice!!");
+}
+}
+}
+ExpressionStmt: System.out.println("Invalid choice!!");
+MethodCallExpr: System.out.println("Invalid choice!!")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Invalid choice!!"
+ExpressionStmt: num = false;
+AssignExpr: num = false
+NameExpr: num
+SimpleName: num
+BooleanLiteralExpr: false
+BlockStmt: {
+throw new Exception();
+ThrowStmt: throw new Exception();
+ObjectCreationExpr: new Exception()
+ClassOrInterfaceType: Exception
+SimpleName: Exception
+CatchClause: catch (Exception e) {
+System.out.println("Not a number");
+Parameter: Exception e
+ClassOrInterfaceType: Exception
+SimpleName: Exception
+SimpleName: e
+BlockStmt: {
+System.out.println("Not a number");
+ExpressionStmt: System.out.println("Not a number");
+MethodCallExpr: System.out.println("Not a number")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Not a number"
+Class name: Shapes
+Class AST:
+ClassOrInterfaceDeclaration: // Shapes
+class Shapes {
+int area;
+//calculate the area of a shape
+int calculateArea() {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter Length: ");
+int length = input.nextInt();
+System.out.println("Enter Width: ");
+int width = input.nextInt();
+area = length * width;
+return area;}
+//prints the methods in the shapes class
+void print() {
+System.out.println(calculateArea() + "m");
+props();
+draw();
+}
+//prints the properties of the shape
+void props() {
+String[] properties = { "" + "*closed two-dimensional figure", "*has a
+specific form", "*has a fixed size", "and has orientation" };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+}
+//draws the shape
+void draw() {
+System.out.println();
+System.out.println("Shape drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}
+SimpleName: Shapes
+FieldDeclaration: int area;
+VariableDeclarator: area
+PrimitiveType: int
+SimpleName: area
+MethodDeclaration: //calculate the area of a shape
+int calculateArea() {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter Length: ");
+int length = input.nextInt();
+System.out.println("Enter Width: ");
+int width = input.nextInt();
+area = length * width;
+return area;
+}
+SimpleName: calculateArea
+PrimitiveType: int
+BlockStmt: {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter Length: ");
+int length = input.nextInt();
+System.out.println("Enter Width: ");
+int width = input.nextInt();
+area = length * width;
+return area;
+}
+ExpressionStmt: Scanner input = new Scanner(System.in);
+VariableDeclarationExpr: Scanner input = new Scanner(System.in)VariableDeclarator: input = new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+SimpleName: input
+ObjectCreationExpr: new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+FieldAccessExpr: System.in
+NameExpr: System
+SimpleName: System
+SimpleName: in
+ExpressionStmt: System.out.println("Enter Length: ");
+MethodCallExpr: System.out.println("Enter Length: ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Enter Length: "
+ExpressionStmt: int length = input.nextInt();
+VariableDeclarationExpr: int length = input.nextInt()
+VariableDeclarator: length = input.nextInt()
+PrimitiveType: int
+SimpleName: length
+MethodCallExpr: input.nextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: nextInt
+ExpressionStmt: System.out.println("Enter Width: ");
+MethodCallExpr: System.out.println("Enter Width: ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Enter Width: "
+ExpressionStmt: int width = input.nextInt();
+VariableDeclarationExpr: int width = input.nextInt()
+VariableDeclarator: width = input.nextInt()
+PrimitiveType: int
+SimpleName: width
+MethodCallExpr: input.nextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: nextInt
+ExpressionStmt: area = length * width;
+AssignExpr: area = length * width
+NameExpr: area
+SimpleName: area
+BinaryExpr: length * width
+NameExpr: length
+SimpleName: length
+NameExpr: width
+SimpleName: width
+ReturnStmt: return area;
+NameExpr: area
+SimpleName: area
+MethodDeclaration: //prints the methods in the shapes class
+void print() {
+System.out.println(calculateArea() + "m");}
+}
+props();
+draw();
+SimpleName: print
+VoidType: void
+BlockStmt: {
+System.out.println(calculateArea() + "m");
+props();
+draw();
+ExpressionStmt: System.out.println(calculateArea() + "m");
+MethodCallExpr: System.out.println(calculateArea() + "m")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+BinaryExpr: calculateArea() + "m"
+MethodCallExpr: calculateArea()
+SimpleName: calculateArea
+StringLiteralExpr: "m"
+ExpressionStmt: props();
+MethodCallExpr: props()
+SimpleName: props
+ExpressionStmt: draw();
+MethodCallExpr: draw()
+SimpleName: draw
+MethodDeclaration: //prints the properties of the shape
+void props() {
+String[] properties = { "" + "*closed two-dimensional figure", "*has a
+specific form", "*has a fixed size", "and has orientation" };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+SimpleName: props
+VoidType: void
+BlockStmt: {
+String[] properties = { "" + "*closed two-dimensional figure", "*has a
+specific form", "*has a fixed size", "and has orientation" };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+ExpressionStmt: String[] properties = { "" + "*closed two-dimensional
+figure", "*has a specific form", "*has a fixed size", "and has orientation" };
+VariableDeclarationExpr: String[] properties = { "" + "*closed two-
+dimensional figure", "*has a specific form", "*has a fixed size", "and has
+orientation" }
+VariableDeclarator: properties = { "" + "*closed two-dimensional
+figure", "*has a specific form", "*has a fixed size", "and has orientation" }
+ArrayType: String[]
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: properties
+ArrayInitializerExpr: { "" + "*closed two-dimensional figure", "*has
+a specific form", "*has a fixed size", "and has orientation" }
+BinaryExpr: "" + "*closed two-dimensional figure"}
+}
+StringLiteralExpr: ""
+StringLiteralExpr: "*closed two-dimensional figure"
+StringLiteralExpr: "*has a specific form"
+StringLiteralExpr: "*has a fixed size"
+StringLiteralExpr: "and has orientation"
+ExpressionStmt: System.out.println("\n**Properties**");
+MethodCallExpr: System.out.println("\n**Properties**")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "\n**Properties**"
+ForEachStmt: for (String property : properties) {
+System.out.println(property);
+VariableDeclarationExpr: String property
+VariableDeclarator: property
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: property
+NameExpr: properties
+SimpleName: properties
+BlockStmt: {
+System.out.println(property);
+ExpressionStmt: System.out.println(property);
+MethodCallExpr: System.out.println(property)
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+NameExpr: property
+SimpleName: property
+MethodDeclaration: //draws the shape
+void draw() {
+System.out.println();
+System.out.println("Shape drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}
+SimpleName: draw
+VoidType: void
+BlockStmt: {
+System.out.println();
+System.out.println("Shape drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}}
+}
+}
+}
+ExpressionStmt: System.out.println();
+MethodCallExpr: System.out.println()
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+ExpressionStmt: System.out.println("Shape drawn below");
+MethodCallExpr: System.out.println("Shape drawn below")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Shape drawn below"
+ForStmt: for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+VariableDeclarationExpr: int i = 1
+VariableDeclarator: i = 1
+PrimitiveType: int
+SimpleName: i
+IntegerLiteralExpr: 1
+BinaryExpr: i <= 5
+NameExpr: i
+SimpleName: i
+IntegerLiteralExpr: 5
+UnaryExpr: i++
+NameExpr: i
+SimpleName: i
+BlockStmt: {
+for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+ForStmt: for (int j = 1; j <= 10; j++) {
+System.out.print("*");
+VariableDeclarationExpr: int j = 1
+VariableDeclarator: j = 1
+PrimitiveType: int
+SimpleName: j
+IntegerLiteralExpr: 1
+BinaryExpr: j <= 10
+NameExpr: j
+SimpleName: j
+IntegerLiteralExpr: 10
+UnaryExpr: j++
+NameExpr: j
+SimpleName: j
+BlockStmt: {
+System.out.print("*");
+ExpressionStmt: System.out.print("*");MethodCallExpr: System.out.print("*")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: print
+StringLiteralExpr: "*"
+ExpressionStmt: // move to the next line after printing each row
+System.out.println();
+MethodCallExpr: System.out.println()
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+Class name: Triangle
+Class AST:
+ClassOrInterfaceDeclaration: class Triangle extends Shapes {
+@Override
+int calculateArea() {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter base: ");
+int length = input.nextInt();
+System.out.println("Enter height: ");
+int width = input.nextInt();
+area = (int) (.5 * (length * width));
+return area;
+}
+@Override
+void print() {
+System.out.println(calculateArea() + "m");
+props();
+}
+@Override
+void props() {
+String[] properties = { "* Has three sides and three angles.", "* The
+sum of the angles is always 180 degrees.", "* The area can be calculated using
+the formula 1/2 X base X height." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+@Override
+void draw() {
+System.out.println();
+System.out.println("Triangle drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}}
+SimpleName: Triangle
+MethodDeclaration: @Override
+int calculateArea() {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter base: ");
+int length = input.nextInt();
+System.out.println("Enter height: ");
+int width = input.nextInt();
+area = (int) (.5 * (length * width));
+return area;
+}
+MarkerAnnotationExpr: @Override
+Name: Override
+SimpleName: calculateArea
+PrimitiveType: int
+BlockStmt: {
+Scanner input = new Scanner(System.in);
+System.out.println("Enter base: ");
+int length = input.nextInt();
+System.out.println("Enter height: ");
+int width = input.nextInt();
+area = (int) (.5 * (length * width));
+return area;
+}
+ExpressionStmt: Scanner input = new Scanner(System.in);
+VariableDeclarationExpr: Scanner input = new Scanner(System.in)
+VariableDeclarator: input = new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+SimpleName: input
+ObjectCreationExpr: new Scanner(System.in)
+ClassOrInterfaceType: Scanner
+SimpleName: Scanner
+FieldAccessExpr: System.in
+NameExpr: System
+SimpleName: System
+SimpleName: in
+ExpressionStmt: System.out.println("Enter base: ");
+MethodCallExpr: System.out.println("Enter base: ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Enter base: "
+ExpressionStmt: int length = input.nextInt();
+VariableDeclarationExpr: int length = input.nextInt()
+VariableDeclarator: length = input.nextInt()
+PrimitiveType: int
+SimpleName: length
+MethodCallExpr: input.nextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: nextInt
+ExpressionStmt: System.out.println("Enter height: ");
+MethodCallExpr: System.out.println("Enter height: ")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: SystemSimpleName: out
+SimpleName: println
+StringLiteralExpr: "Enter height: "
+ExpressionStmt: int width = input.nextInt();
+VariableDeclarationExpr: int width = input.nextInt()
+VariableDeclarator: width = input.nextInt()
+PrimitiveType: int
+SimpleName: width
+MethodCallExpr: input.nextInt()
+NameExpr: input
+SimpleName: input
+SimpleName: nextInt
+ExpressionStmt: area = (int) (.5 * (length * width));
+AssignExpr: area = (int) (.5 * (length * width))
+NameExpr: area
+SimpleName: area
+CastExpr: (int) (.5 * (length * width))
+PrimitiveType: int
+EnclosedExpr: (.5 * (length * width))
+BinaryExpr: .5 * (length * width)
+DoubleLiteralExpr: .5
+EnclosedExpr: (length * width)
+BinaryExpr: length * width
+NameExpr: length
+SimpleName: length
+NameExpr: width
+SimpleName: width
+ReturnStmt: return area;
+NameExpr: area
+SimpleName: area
+MethodDeclaration: @Override
+void print() {
+System.out.println(calculateArea() + "m");
+props();
+}
+MarkerAnnotationExpr: @Override
+Name: Override
+SimpleName: print
+VoidType: void
+BlockStmt: {
+System.out.println(calculateArea() + "m");
+props();
+}
+ExpressionStmt: System.out.println(calculateArea() + "m");
+MethodCallExpr: System.out.println(calculateArea() + "m")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+BinaryExpr: calculateArea() + "m"
+MethodCallExpr: calculateArea()
+SimpleName: calculateArea
+StringLiteralExpr: "m"
+ExpressionStmt: props();
+MethodCallExpr: props()
+SimpleName: props
+MethodDeclaration: @Override
+void props() {String[] properties = { "* Has three sides and three angles.", "* The sum of
+the angles is always 180 degrees.", "* The area can be calculated using the
+formula 1/2 X base X height." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+MarkerAnnotationExpr: @Override
+Name: Override
+SimpleName: props
+VoidType: void
+BlockStmt: {
+String[] properties = { "* Has three sides and three angles.", "* The sum of
+the angles is always 180 degrees.", "* The area can be calculated using the
+formula 1/2 X base X height." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+ExpressionStmt: String[] properties = { "* Has three sides and three
+angles.", "* The sum of the angles is always 180 degrees.", "* The area can be
+calculated using the formula 1/2 X base X height." };
+VariableDeclarationExpr: String[] properties = { "* Has three sides and
+three angles.", "* The sum of the angles is always 180 degrees.", "* The area
+can be calculated using the formula 1/2 X base X height." }
+VariableDeclarator: properties = { "* Has three sides and three
+angles.", "* The sum of the angles is always 180 degrees.", "* The area can be
+calculated using the formula 1/2 X base X height." }
+ArrayType: String[]
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: properties
+ArrayInitializerExpr: { "* Has three sides and three angles.", "*
+The sum of the angles is always 180 degrees.", "* The area can be calculated
+using the formula 1/2 X base X height." }
+StringLiteralExpr: "* Has three sides and three angles."
+StringLiteralExpr: "* The sum of the angles is always 180
+degrees."
+StringLiteralExpr: "* The area can be calculated using the formula
+1/2 X base X height."
+ExpressionStmt: System.out.println("\n**Properties**");
+MethodCallExpr: System.out.println("\n**Properties**")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "\n**Properties**"
+ForEachStmt: for (String property : properties) {
+System.out.println(property);
+}
+VariableDeclarationExpr: String property
+VariableDeclarator: property
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: property
+NameExpr: properties
+SimpleName: properties}
+BlockStmt: {
+System.out.println(property);
+ExpressionStmt: System.out.println(property);
+MethodCallExpr: System.out.println(property)
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+NameExpr: property
+SimpleName: property
+MethodDeclaration: @Override
+void draw() {
+System.out.println();
+System.out.println("Triangle drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}
+MarkerAnnotationExpr: @Override
+Name: Override
+SimpleName: draw
+VoidType: void
+BlockStmt: {
+System.out.println();
+System.out.println("Triangle drawn below");
+for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+}
+}
+ExpressionStmt: System.out.println();
+MethodCallExpr: System.out.println()
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+ExpressionStmt: System.out.println("Triangle drawn below");
+MethodCallExpr: System.out.println("Triangle drawn below")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "Triangle drawn below"
+ForStmt: for (int i = 1; i <= 5; i++) {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();}
+}
+}
+}
+VariableDeclarationExpr: int i = 1
+VariableDeclarator: i = 1
+PrimitiveType: int
+SimpleName: i
+IntegerLiteralExpr: 1
+BinaryExpr: i <= 5
+NameExpr: i
+SimpleName: i
+IntegerLiteralExpr: 5
+UnaryExpr: i++
+NameExpr: i
+SimpleName: i
+BlockStmt: {
+for (int j = 1; j <= i; j++) {
+System.out.print("*");
+}
+// move to the next line after printing each row
+System.out.println();
+ForStmt: for (int j = 1; j <= i; j++) {
+System.out.print("*");
+VariableDeclarationExpr: int j = 1
+VariableDeclarator: j = 1
+PrimitiveType: int
+SimpleName: j
+IntegerLiteralExpr: 1
+BinaryExpr: j <= i
+NameExpr: j
+SimpleName: j
+NameExpr: i
+SimpleName: i
+UnaryExpr: j++
+NameExpr: j
+SimpleName: j
+BlockStmt: {
+System.out.print("*");
+ExpressionStmt: System.out.print("*");
+MethodCallExpr: System.out.print("*")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: print
+StringLiteralExpr: "*"
+ExpressionStmt: // move to the next line after printing each row
+System.out.println();
+MethodCallExpr: System.out.println()
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+ClassOrInterfaceType: Shapes
+SimpleName: Shapes
+Class name: Rectangle
+Class AST:ClassOrInterfaceDeclaration: //Rectangle
+class Rectangle extends Shapes {
+@Override
+void props() {
+String[] properties = { "* Has four sides with opposite sides parallel
+and equal in length.", "* The opposite sides have the same length.", "* The area
+can be calculated using the formula length * width." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+}
+SimpleName: Rectangle
+MethodDeclaration: @Override
+void props() {
+String[] properties = { "* Has four sides with opposite sides parallel and
+equal in length.", "* The opposite sides have the same length.", "* The area can
+be calculated using the formula length * width." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+MarkerAnnotationExpr: @Override
+Name: Override
+SimpleName: props
+VoidType: void
+BlockStmt: {
+String[] properties = { "* Has four sides with opposite sides parallel and
+equal in length.", "* The opposite sides have the same length.", "* The area can
+be calculated using the formula length * width." };
+System.out.println("\n**Properties**");
+for (String property : properties) {
+System.out.println(property);
+}
+}
+ExpressionStmt: String[] properties = { "* Has four sides with opposite
+sides parallel and equal in length.", "* The opposite sides have the same
+length.", "* The area can be calculated using the formula length * width." };
+VariableDeclarationExpr: String[] properties = { "* Has four sides with
+opposite sides parallel and equal in length.", "* The opposite sides have the
+same length.", "* The area can be calculated using the formula length *
+width." }
+VariableDeclarator: properties = { "* Has four sides with opposite
+sides parallel and equal in length.", "* The opposite sides have the same
+length.", "* The area can be calculated using the formula length * width." }
+ArrayType: String[]
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: properties
+ArrayInitializerExpr: { "* Has four sides with opposite sides
+parallel and equal in length.", "* The opposite sides have the same length.", "*
+The area can be calculated using the formula length * width." }
+StringLiteralExpr: "* Has four sides with opposite sides parallel
+and equal in length."
+StringLiteralExpr: "* The opposite sides have the same length."
+StringLiteralExpr: "* The area can be calculated using the formula
+length * width."}
+}
+ExpressionStmt: System.out.println("\n**Properties**");
+MethodCallExpr: System.out.println("\n**Properties**")
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+StringLiteralExpr: "\n**Properties**"
+ForEachStmt: for (String property : properties) {
+System.out.println(property);
+VariableDeclarationExpr: String property
+VariableDeclarator: property
+ClassOrInterfaceType: String
+SimpleName: String
+SimpleName: property
+NameExpr: properties
+SimpleName: properties
+BlockStmt: {
+System.out.println(property);
+ExpressionStmt: System.out.println(property);
+MethodCallExpr: System.out.println(property)
+FieldAccessExpr: System.out
+NameExpr: System
+SimpleName: System
+SimpleName: out
+SimpleName: println
+NameExpr: property
+SimpleName: property
+ClassOrInterfaceType: Shapes
+SimpleName: Shapes
+Class name: Circle
+Class AST:
+ClassOrInterfaceDeclaration: //Circle
+class Circle {
+// the radius of the circle
+private double radius;
+// constructor that takes in a radius value
+public Circle(double radius) {
+this.radius = radius;
+}
+// getter method for the radius property
+public double getRadius() {
+return radius;
+}
+// setter method for the radius property
+public void setRadius(double radius) {
+this.radius = radius;
+}
+// method that calculates the area of the circle
+public double calculateArea() {
+return Math.PI * Math.pow(radius, 2);
+}// method that calculates the circumference of the circle
+public double calculateCircumference() {
+return 2 * Math.PI * radius;
+}
+}
+// method that returns a string representation of the circle object
+@Override
+public String toString() {
+return "Circle with radius " + radius;
+}
+SimpleName: Circle
+FieldDeclaration: // the radius of the circle
+private double radius;
+Modifier: private
+VariableDeclarator: radius
+PrimitiveType: double
+SimpleName: radius
+ConstructorDeclaration: // constructor that takes in a radius value
+public Circle(double radius) {
+this.radius = radius;
+}
+Modifier: public
+SimpleName: Circle
+Parameter: double radius
+PrimitiveType: double
+SimpleName: radius
+BlockStmt: {
+this.radius = radius;
+}
+ExpressionStmt: this.radius = radius;
+AssignExpr: this.radius = radius
+FieldAccessExpr: this.radius
+ThisExpr: this
+SimpleName: radius
+NameExpr: radius
+SimpleName: radius
+MethodDeclaration: // getter method for the radius property
+public double getRadius() {
+return radius;
+}
+Modifier: public
+SimpleName: getRadius
+PrimitiveType: double
+BlockStmt: {
+return radius;
+}
+ReturnStmt: return radius;
+NameExpr: radius
+SimpleName: radius
+MethodDeclaration: // setter method for the radius property
+public void setRadius(double radius) {
+this.radius = radius;
+}
+Modifier: public
+SimpleName: setRadius
+Parameter: double radius
+PrimitiveType: double
+SimpleName: radius}
+VoidType: void
+BlockStmt: {
+this.radius = radius;
+ExpressionStmt: this.radius = radius;
+AssignExpr: this.radius = radius
+FieldAccessExpr: this.radius
+ThisExpr: this
+SimpleName: radius
+NameExpr: radius
+SimpleName: radius
+MethodDeclaration: // method that calculates the area of the circle
+public double calculateArea() {
+return Math.PI * Math.pow(radius, 2);
+}
+Modifier: public
+SimpleName: calculateArea
+PrimitiveType: double
+BlockStmt: {
+return Math.PI * Math.pow(radius, 2);
+}
+ReturnStmt: return Math.PI * Math.pow(radius, 2);
+BinaryExpr: Math.PI * Math.pow(radius, 2)
+FieldAccessExpr: Math.PI
+NameExpr: Math
+SimpleName: Math
+SimpleName: PI
+MethodCallExpr: Math.pow(radius, 2)
+NameExpr: Math
+SimpleName: Math
+SimpleName: pow
+NameExpr: radius
+SimpleName: radius
+IntegerLiteralExpr: 2
+MethodDeclaration: // method that calculates the circumference of the circle
+public double calculateCircumference() {
+return 2 * Math.PI * radius;
+}
+Modifier: public
+SimpleName: calculateCircumference
+PrimitiveType: double
+BlockStmt: {
+return 2 * Math.PI * radius;
+}
+ReturnStmt: return 2 * Math.PI * radius;
+BinaryExpr: 2 * Math.PI * radius
+BinaryExpr: 2 * Math.PI
+IntegerLiteralExpr: 2
+FieldAccessExpr: Math.PI
+NameExpr: Math
+SimpleName: Math
+SimpleName: PI
+NameExpr: radius
+SimpleName: radius
+MethodDeclaration: // method that returns a string representation of the
+circle object
+@Override
+public String toString() {
+return "Circle with radius " + radius;
+}}
+MarkerAnnotationExpr: @Override
+Name: Override
+Modifier: public
+SimpleName: toString
+ClassOrInterfaceType: String
+SimpleName: String
+BlockStmt: {
+return "Circle with radius " + radius;
+ReturnStmt: return "Circle with radius " + radius;
+BinaryExpr: "Circle with radius " + radius
+StringLiteralExpr: "Circle with radius "
+NameExpr: radius
+SimpleName: radius
+Process finished with exit code 0
